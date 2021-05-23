@@ -31,7 +31,6 @@ fn main() {
     for line in lines {
         if line.contains("Q. ") {
             questions.push(line.replace("Q. ", ""));
-        //println!("Added question");
         } else if line.contains("A. ") {
             answers.push(line.replace("A. ", ""));
         }
@@ -60,10 +59,10 @@ fn main() {
         answer.truncate(len - 1);
         println!("Check Answer |{}| |{}|", answer, answers[current]);
         if answer == answers[current] {
-            println!("Correct");
+            println!("-> Correct");
             score = score + 1;
         } else {
-            println!("Incorrect");
+            println!("-> Incorrect");
             score = score - 1;
         }
         println!(
