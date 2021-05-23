@@ -1,0 +1,8 @@
+Q. function keyword in rust
+A. fn
+
+Q. package manager for rust
+A. cargo
+
+Q. create a mutable variable
+A. let mut
