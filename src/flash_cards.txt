@@ -6,3 +6,40 @@ A. cargo
 
 Q. create a mutable variable
 A. let mut
+
+Q. how to print line
+A. println!()
+
+Q. define main
+A. fn main() {}
+
+Q. how to print var in print statement
+A. {}
+
+Q. how to read file
+A. BufReader
+
+Q. define a path
+A. Path::new()
+L. https://doc.rust-lang.org/std/path/struct.Path.html
+
+Q. compare operator
+A. ==
+
+Q. is rust garbage collected
+A. no
+
+Q. Ownership
+A. this
+
+Q. Borrow checker
+A. that
+
+Q. what is rust lifetime
+A. way to have memory safety in rust
+
+Q. null in rust
+A. use option type
+
+Q. command line arguments in rust
+A. Args
