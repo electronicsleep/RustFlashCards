@@ -33,10 +33,10 @@ Q. Ownership
 A. this
 
 Q. Borrow checker
-A. that
+A. way to manage ownership in Rust
 
 Q. what is rust lifetime
-A. way to have memory safety in rust
+A. way to have memory safety in rust to ensure all borrows are valid
 
 Q. null in rust
 A. use option type
