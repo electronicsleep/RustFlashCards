@@ -29,10 +29,10 @@ A. ==
 Q. is rust garbage collected
 A. no
 
-Q. Ownership
-A. this
+Q. Rust ownership
+A. enables Rust to make memory safety guarantees without needing a garbage collector
 
-Q. Borrow checker
+Q. Rust borrow checker
 A. way to manage ownership in Rust
 
 Q. what is rust lifetime
