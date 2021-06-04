@@ -29,9 +29,9 @@ fn main() {
 
     let lines = read_file("src/flash_cards.txt");
     for line in lines {
-        if line.contains("Q. ") {
+        if line.starts_with("Q. ") {
             questions.push(line.replace("Q. ", ""));
-        } else if line.contains("A. ") {
+        } else if line.starts_with("A. ") {
             answers.push(line.replace("A. ", ""));
         }
     }
@@ -43,7 +43,7 @@ fn main() {
     println!("-> Starting FlashCards");
 
     while num_checks < total_checks {
-        num_checks = num_checks + 1;
+        num_checks += 1;
 
         let current = rand::thread_rng().gen_range(0, num_cards);
         println!("-> FlashCards Card {}", current);
@@ -60,10 +60,10 @@ fn main() {
         println!("Check Answer |{}| |{}|", answer, answers[current]);
         if answer == answers[current] {
             println!("-> Correct");
-            score = score + 1;
+            score += 1;
         } else {
             println!("-> Incorrect");
-            score = score - 1;
+            score -= 1;
         }
         println!(
             "-> Score: {} Run: {} of {}",
